@@ -7,7 +7,7 @@ function Home() {
     <Container>
       <Row style={{justifyContent: 'center'}}>
         <GameCard title='Tic Tac Toe' path='/tictactoe'/>
-        <GameCard title='2048' path='/2048'/>
+        <GameCard title='2048' path='/twozerofoureight'/>
         <GameCard title='Tetris' path='/tetris' />
       </Row>
     </Container>

@@ -1,5 +1,4 @@
 import React from 'react';
-import './TicTacToe.css';
 
 const size = 3;
 
@@ -93,22 +92,22 @@ function TicTacToe() {
   return (
     <>
       <h2>Tic Tac Toe</h2>
-      <table>
+      <table className='tictactoe-table'>
         <tbody style={{ opacity: game === 1 || game === -1 ? '0.5' : ''}}>
-          <tr>
-            <td className={game === 0 ? 'hover' : ''} onClick={() => fillCell(0,0)}>{grid[0][0]}</td>
-            <td className={game === 0 ? 'hover' : ''} onClick={() => fillCell(0,1)}>{grid[0][1]}</td>
-            <td className={game === 0 ? 'hover' : ''} onClick={() => fillCell(0,2)}>{grid[0][2]}</td>
+          <tr className='tictactoe-row'>
+            <td className={game === 0 ? 'hover tictactoe-cell' : 'tictactoe-cell'} onClick={() => fillCell(0,0)}>{grid[0][0]}</td>
+            <td className={game === 0 ? 'hover tictactoe-cell' : 'tictactoe-cell'} onClick={() => fillCell(0,1)}>{grid[0][1]}</td>
+            <td className={game === 0 ? 'hover tictactoe-cell' : 'tictactoe-cell'} onClick={() => fillCell(0,2)}>{grid[0][2]}</td>
           </tr>
-          <tr>
-            <td className={game === 0 ? 'hover' : ''} onClick={() => fillCell(1,0)}>{grid[1][0]}</td>
-            <td className={game === 0 ? 'hover' : ''} onClick={() => fillCell(1,1)}>{grid[1][1]}</td>
-            <td className={game === 0 ? 'hover' : ''} onClick={() => fillCell(1,2)}>{grid[1][2]}</td>
+          <tr className='tictactoe-row'>
+            <td className={game === 0 ? 'hover tictactoe-cell' : 'tictactoe-cell'} onClick={() => fillCell(1,0)}>{grid[1][0]}</td>
+            <td className={game === 0 ? 'hover tictactoe-cell' : 'tictactoe-cell'} onClick={() => fillCell(1,1)}>{grid[1][1]}</td>
+            <td className={game === 0 ? 'hover tictactoe-cell' : 'tictactoe-cell'} onClick={() => fillCell(1,2)}>{grid[1][2]}</td>
           </tr>
-          <tr>
-            <td className={game === 0 ? 'hover' : ''} onClick={() => fillCell(2,0)}>{grid[2][0]}</td>
-            <td className={game === 0 ? 'hover' : ''} onClick={() => fillCell(2,1)}>{grid[2][1]}</td>
-            <td className={game === 0 ? 'hover' : ''} onClick={() => fillCell(2,2)}>{grid[2][2]}</td>
+          <tr className='tictactoe-row'>
+            <td className={game === 0 ? 'hover tictactoe-cell' : 'tictactoe-cell'} onClick={() => fillCell(2,0)}>{grid[2][0]}</td>
+            <td className={game === 0 ? 'hover tictactoe-cell' : 'tictactoe-cell'} onClick={() => fillCell(2,1)}>{grid[2][1]}</td>
+            <td className={game === 0 ? 'hover tictactoe-cell' : 'tictactoe-cell'} onClick={() => fillCell(2,2)}>{grid[2][2]}</td>
           </tr>
         </tbody>
       </table>

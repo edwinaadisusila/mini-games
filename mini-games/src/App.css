@@ -1,3 +1,69 @@
 .App {
   text-align: center;
 }
+
+button {
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+
+/* tic tac toe */
+
+.tictactoe-table {
+  padding: 0px;
+  border-collapse: collapse;
+  border: 5px solid #B0B0B0;
+  margin: 20px auto;
+}
+
+.tictactoe-cell {
+  width: 125px;
+  padding: 0px;
+  border-collapse: collapse;
+  border: 5px solid #B0B0B0;
+  margin: 20px auto;
+}
+
+.tictactoe-row {
+  height: 130px;
+  font-size: 50px;
+  color: #776e65;
+  padding: 0px;
+  border-collapse: collapse;
+  border: 5px solid #B0B0B0;
+  margin: 20px auto;
+}
+
+.hover:hover {
+  background-color: #E8E8E8;
+  cursor: pointer;
+}
+
+/* two zero four eight */
+.two-table {
+  background-color: #cdc1b4;
+  padding: 0px;
+  border-collapse: collapse;
+  border: 16px solid #bbada0;
+  margin: 20px auto;
+}
+
+.two-cell {
+  width: 130px;
+  padding: 0px;
+  border-collapse: collapse;
+  border: 16px solid #bbada0;
+  margin: 20px auto;
+}
+
+.two-row {
+  height: 130px;
+  font-size: 50px;
+  color: #776e65;
+  padding: 0px;
+  border-collapse: collapse;
+  border: 16px solid #bbada0;
+  margin: 20px auto;
+}

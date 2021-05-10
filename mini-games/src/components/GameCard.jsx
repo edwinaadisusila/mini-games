@@ -11,7 +11,7 @@ function GameCard ({ title, path }) {
 
   return (
     <Card style={{ width: '18rem', margin: '20px' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src="" />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Button variant="primary" onClick={() => onClick()}>Play!</Button>

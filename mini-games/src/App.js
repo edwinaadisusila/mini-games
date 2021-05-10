@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './components/Home';
 import TicTacToe from './games/TicTacToe';
+import TwoZeroFourEight from './games/TwoZeroFourEight';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Switch>
           <Route exact path={'/'} component={Home}/>
           <Route path={'/tictactoe'} component={TicTacToe}/>
+          <Route path={'/twozerofoureight'} component={TwoZeroFourEight}/>
         </Switch>
         <Footer text="Edwina Adisusila" />
       </div>

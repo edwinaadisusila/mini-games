@@ -1,0 +1,27 @@
+table, td, tr {
+  padding: 0px;
+  border-collapse: collapse;
+  border: 5px solid #B0B0B0;
+  margin: 20px auto;
+}
+
+td {
+  width: 125px;
+}
+
+.hover:hover {
+  background-color: #E8E8E8;
+  cursor: pointer;
+}
+
+tr {
+  height: 130px;
+  font-size: 50px;
+  color: #776e65;
+}
+
+button {
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+}

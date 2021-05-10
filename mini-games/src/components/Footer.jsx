@@ -1,13 +1,6 @@
 import React from 'react';
 
-const outer = {
-  display: 'block',
-  padding: '20px',
-  height: '60px',
-  width: '100%',
-}
-
-const inner = {
+const style = {
   borderTop: '1px solid #E7E7E7',
   textAlign: 'right',
   padding: '15px',
@@ -20,10 +13,8 @@ const inner = {
 
 function Footer ({ text }) {
   return (
-    <footer style={outer}>
-      <div className='bg-light' style={inner}>
-        &copy; {text}
-      </div>
+    <footer className='bg-light' style={style}>
+      &copy; {text}
     </footer>
   )
 }

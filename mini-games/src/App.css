@@ -45,16 +45,14 @@ button {
 .two-table {
   background-color: #cdc1b4;
   padding: 0px;
-  border-collapse: collapse;
-  border: 16px solid #bbada0;
   margin: 20px auto;
 }
 
 .two-cell {
   width: 130px;
   padding: 0px;
-  border-collapse: collapse;
   border: 16px solid #bbada0;
+  border-radius: 10px;
   margin: 20px auto;
 }
 
@@ -63,7 +61,39 @@ button {
   font-size: 50px;
   color: #776e65;
   padding: 0px;
-  border-collapse: collapse;
-  border: 16px solid #bbada0;
   margin: 20px auto;
+}
+
+/* minesweeper */
+.minesweeper-table {
+  padding: 0px;
+  border-collapse: collapse;
+  border: 5px solid #B0B0B0;
+  margin: 20px auto;
+}
+
+.minesweeper-cell {
+  width: 50px;
+  padding: 0px;
+  border-collapse: collapse;
+  border: 5px solid #B0B0B0;
+  margin: 20px auto;
+}
+
+.minesweeper-row {
+  height: 50px;
+  font-size: 20px;
+  color: #776e65;
+  padding: 0px;
+  border-collapse: collapse;
+  border: 5px solid #B0B0B0;
+  margin: 20px auto;
+}
+
+.hide {
+  opacity: 1;
+}
+
+.show {
+  opacity: 0;
 }

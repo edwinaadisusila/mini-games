@@ -8,7 +8,7 @@ function Home() {
       <Row style={{justifyContent: 'center'}}>
         <GameCard title='Tic Tac Toe' path='/tictactoe'/>
         <GameCard title='2048' path='/twozerofoureight'/>
-        <GameCard title='Tetris' path='/tetris' />
+        <GameCard title='Minesweeper' path='/minesweeper' />
       </Row>
     </Container>
   );

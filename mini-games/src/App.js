@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import TicTacToe from './games/TicTacToe';
 import TwoZeroFourEight from './games/TwoZeroFourEight';
+import Minesweeper from './games/Minesweeper';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route exact path={'/'} component={Home}/>
           <Route path={'/tictactoe'} component={TicTacToe}/>
           <Route path={'/twozerofoureight'} component={TwoZeroFourEight}/>
+          <Route path={'/minesweeper'} component={Minesweeper}/>
         </Switch>
         <Footer text="Edwina Adisusila" />
       </div>

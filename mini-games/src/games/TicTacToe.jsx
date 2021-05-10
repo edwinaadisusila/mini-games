@@ -6,10 +6,12 @@ function TicTacToe() {
   const [player, setPlayer] = React.useState(false);
   const [grid, setGrid] = React.useState([[null, null, null], [null, null, null], [null, null, null]])
   const [game, setGame] = React.useState(0)
+  const [timer, setTimer] = React.useState(0);
 
   const resetGrid = () => {
     setGrid([[null, null, null], [null, null, null], [null, null, null]]);
     setGame(0);
+    setTimer(0);
   }
 
   const checkLose = () => {
@@ -69,7 +71,7 @@ function TicTacToe() {
   }
 
   const fillCell = (row, col) => {
-    if (game === 0) {
+    if (game === 0 && grid[row][col] === null) {
       const newGrid = [...grid];
       let cell = '';
       if (!player) {
@@ -88,6 +90,22 @@ function TicTacToe() {
       }
     }
   }
+
+  const formatTime = () => {
+    const getSeconds = `0${(timer % 60)}`.slice(-2)
+    const minutes = `${Math.floor(timer / 60)}`
+    const getMinutes = `0${minutes % 60}`.slice(-2)
+
+    return `${getMinutes} : ${getSeconds}`
+  }
+
+  React.useEffect(() => {
+    const id = setInterval(() => setTimer(timer + 1), 1000);
+    if (game !== 0) {
+      clearInterval(id);
+    }
+    return () => clearInterval(id);
+  }, [timer, game]);
 
   return (
     <>
@@ -122,6 +140,9 @@ function TicTacToe() {
           game === -1 ? <><h3>GAME OVER :(</h3><button onClick={() => resetGrid()}>Restart</button></>
           : ''
         }
+      </div>
+      <div>
+        {formatTime()}
       </div>
     </>
   );

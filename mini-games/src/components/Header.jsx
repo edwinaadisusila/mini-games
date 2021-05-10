@@ -13,7 +13,7 @@ function Header ({ title }) {
     <header>
       <Navbar collapseOnSelect bg="light" expand="lg" style={style}>
         <Navbar.Brand className='navbar-brand'>
-          <Link to={'/'}>{title}</Link>
+          <Link to={'/'} style={{textDecoration: 'none'}}>{title}</Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

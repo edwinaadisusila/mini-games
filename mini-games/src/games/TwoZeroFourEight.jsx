@@ -447,7 +447,6 @@ function TwoZeroFourEight() {
       </table>
       <div>
         {
-          
           game === 1 ? <><h3>YOU WIN :)</h3><button onClick={() => resetGrid()}>Restart</button></>
           : ''
         }
